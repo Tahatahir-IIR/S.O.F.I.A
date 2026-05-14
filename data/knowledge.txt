@@ -1,0 +1,12 @@
+Projet : S.O.F.I.A (Système Multi-Agents avec RAG)
+Ce document est la base de connaissances privée de S.O.F.I.A.
+Le système est composé de 4 agents spécialisés :
+1. Agent Routeur : Analyse la requête et décide quel agent doit intervenir.
+2. Agent Chercheur (RAG) : Interroge cette base de connaissances avec LlamaIndex.
+3. Agent Commandant : Exécute des commandes système (ex: ouvrir Chrome).
+4. Agent Mathématicien : Résout des calculs complexes.
+5. Agent Rédacteur : Synthétise la réponse finale pour l'utilisateur.
+
+L'orchestration est faite via LangChain et LangGraph de manière conditionnelle et séquentielle.
+Les données sont ingérées, indexées et récupérées par un pipeline RAG propulsé par LlamaIndex.
+Le LLM utilisé est Ollama (modèles qwen3.5:4b ou llama3.2).
